@@ -1,3 +1,7 @@
+1)install r:click https://cloud.r-project.org/
+2)base:install R for the first time.
+3)download R
+4) install R studio
 # Comment line
 # to get current working directory
 getwd()
