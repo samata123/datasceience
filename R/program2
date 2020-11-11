@@ -1,0 +1,46 @@
+# Extract all rows, 3rd and 5th column
+iris[,c(3,5)
+iris[1]
+iris[1:3]
+data1=iris[,c(3,5)]
+# Get first 6 rows
+head[iris]
+
+# first 10 rows
+head(iris, 10)
+
+#last 6 rows
+a=tail(iris)
+#last 7 rows
+a=tail(iris,7)
+# Add new column to a dataset
+# $ symbol related to column
+iris$new_col=0
+View(iris)
+
+iris$newcol1=iris$Sepal.Length/iris$Sepal.Width
+
+# ifelse(condition, TRUE, FALSE)
+iris$flag=ifelse(iris$Sepal.Length>5, 1, 0)
+
+Data types in R
+1.Numerical 
+2.Vector
+3.character
+create a vector
+a=c(1,5,10,100)
+# Combine row wise
+r1=rbind(a,b)
+View(r1)
+# Combine row wise
+r1=rbind(a,b)
+View(r1)
+
+# To Combine column wise
+c1=cbind(a,b)
+View(c1)
+# Create a Matrix
+M=matrix(1:12, 3,4)
+n=matrix(1:12, 5, 5)
+
+m1=matrix(1:12, 3,4, byrow =TRUE)
