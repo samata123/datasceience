@@ -1,0 +1,46 @@
+# Comment line
+# to get current working directory
+getwd()
+
+# Set a directory
+setwd("C:/Users/Santosh/Desktop")
+
+# Get the list of inbuilt data
+data()
+
+# to know about data information
+iris
+
+help(iris)
+
+# To View an existing data
+View(iris)
+
+# to know Column Names
+names(iris)
+colnames(iris)
+
+# Number of rows
+nrow(iris)
+
+# Number of columns
+ncol(iris)
+
+# To know the dimension of data
+dim(iris)
+
+#####################################
+### ROW OPERATIONS#################
+# Slicing the Data
+
+# Extract 3rd Row
+iris[3,]
+
+# Extract 3rd row, 2nd column
+iris[3,2]
+
+# Extract 19th to 26th row
+iris[19:26, ]
+
+# Extract 1st, 100th 150th row
+iris[c(1,100,150), ]
