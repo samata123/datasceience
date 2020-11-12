@@ -1,0 +1,30 @@
+# Data Frame: Working data/ data on which you are working or mix of vectors
+#create a dataframe is creating our own data, by mentioning coloumn names and row values
+mytable=data.frame(sl=1:4, name=c('abc',"bdc", 'jkl', 'mno'), Age=c(10, 35, 76,100), loc=c('belgaum', 'dharwad', 'bangalore', 'hassan'))
+
+# CTR +SHIFT + C==> multiple line commenting
+
+######################
+### INSTALLING DPLYR PACKAGE##########
+
+install.packages("dplyr")
+library(dplyr)
+
+#select two coloumns Sepal.Length ,Spices
+data1=select(iris,Sepal.Length,species)
+
+#remove two coloumns
+data2=select(iris, -Sepal.Length, -Species)
+
+# rename a column
+data3=rename(iris,  flower_cat=Species)
+
+
+#Select 5 rows randomly from iris
+data4=sample_n(iris, 10)
+
+#select 10% of rows randomly from iris
+data5=sample_frac(iris, 0.10)
+#Raname Sepal.Length column as your name, assign that data as mydata
+
+mydata=rename(iris,samata=Sepal.Length)
